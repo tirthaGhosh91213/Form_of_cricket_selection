@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Team Selection for IT Dept.</title>
+    <style>
+        .mainbox {
+            border: 2px solid black;
+            /* width: 60vw; */
+            /* height: 90vh; */
+            /* margin-left: 180px; */
+            box-shadow: 15px 15px 7px lightgray;
+            background-color: azure;
+            margin: 15px;
+            position:absolute;
+            /* margin: bottom 120px; */
+            /* position: absolute; */
+        }
+        .bat{
+            position: fixed;
+            border-radius: 60px;
+            bottom: 59vh;
+            left: 86vw;
+            /* height: 0vh; */
+        }
+        .subbox1{
+            display: flex;
+            gap: 10px;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 20px;
+            background-color: rgb(64, 190, 190);
+            box-shadow: 10px 10px 5px rgb(88, 118, 118);
+            padding: 10px;
+            position: sticky;
+            top: 0px;
+           
+        }
+        .h11{
+            font-weight: bold;
+            text-shadow: 3px 9px 3px rgb(148, 146, 146);
+            
+        }
+        .h22{
+            font-weight: bold;
+            color: darkblue;
+            text-decoration: underline;
+            text-decoration-color: rgb(183, 10, 10);
+            text-decoration-style: dotted;
+            /* text-shadow: 9px  10px 4px rgb(55, 196, 244); */
+
+        }
+        .p11{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 15px;
+        }
+        .box1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box2{
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding-top: 30px;
+            padding-bottom: 18px;
+        }
+        .box3 div{
+            position: relative;
+        
+        }
+        
+        
+        .button1{
+            cursor: pointer;
+            background-color: rgb(20, 155, 227);
+            border: none;
+            padding: 10px;
+            color: white;
+            border-radius: 7px;
+            margin-bottom: 20px;
+            margin-left: 86vw;
+             }
+           #follow{
+            font-weight: bold;
+            position: relative;
+            left: 35vw;
+            
+           }
+           .agree{
+            position: relative;
+            left: 35vw;
+            font-weight: bold;
+           }
+           .span1{
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 10px;
+            width: 250px;
+            font-weight: bold;
+            background-color: rgb(152, 227, 227);
+           }
+           .span2{
+            border-radius: 5px;
+            background-color:  rgb(152, 227, 227);
+            width: 268px;
+           }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <header class="box1">
+            <div class="subbox1">
+                <img class="hitpic" width="50" height="80" src="https://www.mywbut.com/admissionfair/upload/3273ed149430aeca8a5a4f23e3a55580.png"
+                    alt="logo of HIT">
+                <h1 class="h11">HALDIA INSTITUTE OF TECHNOLOGY</h1>
+            </div>
+            <h2 class="h22">IT Department cricket team selection</h2>
+            <p class="p11">Like every year , this year (2024) also inter college cricket tournament is going to be held in our
+                college (HIT) . For that 5 players will be taken from the 1st year . Those who wish to play cricket for
+                their department fill the from below </p>
+        </header>
+        <span class="box2">
+            <strong class="span1"><label for="yes">Do you like cricket ?</label>
+                <br>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="cricket" value="yes">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="cricket" value="no">
+            </strong>
+                
+            <div class="span1">
+                <label for="name">NAME :</label>
+                <br>
+                <input type="text" id="name"
+                name="username" placeholder="Enter your name ">
+            </div>
+            <div class="span1">
+                <label for="dob">Date of  Birth :</label>
+                <br>
+                <input type="text" id="dob" name="birth" placeholder="In this Form -> 02.12.2004">
+            </div>
+            <div class="span1">
+                <label for="batch">BATCH :</label>
+                <br>
+                <select name="batch" id="batch">
+                    <option value="first">First</option>
+                    <option value="second">Second</option>
+                    <option value="third">Third</option>
+                </select>
+            </div>
+            <div class="span1">
+                <label for="roll">Roll No. :</label>
+                <br>
+                <input type="text" id="roll" name="roll" placeholder="In this Form -> 23/IT/182">
+            </div>
+            <div class="span1">
+                <label for="role">ROLE :</label>
+                <br>
+                <select name="role" id="role">
+                    <option value="bater">Bater</option>
+                    <option value="boler">Boler</option>
+                    <option value="allrounder">Allrounder</option>
+                </select>
+            </div>
+            <div class="span1">
+                <label for="bating  style">Batting  Style :</label>
+                <br>
+                <select name="batting" id="bating style">
+                    <option value="left">Left Handed Bat (Opaner)</option>
+                    <option value="left">Left Handed Bat (middle order)</option>
+                    <option value="right">Right Handed Bat(opaner)</option>
+                    <option value="right">Right Handed Bat(middle order)</option>
+                </select>
+            </div>
+            <div class="span1">
+                <label for="bowling style">Bowling Style :</label>
+                <br>
+                <select name="bowling" id="bowling style">
+                    <option value="first">Right-arm First</option>
+                    <option value="first">Right-arm First-medium</option>
+                    <option value="left">Left-arm First</option>
+                    <option value="second">Left-arm First-medium</option>
+                    <option value="spin">Left-arm Wrist-spin</option>
+                    <option value="arm">Left-arm orthodox</option>
+                    <option value="right">Right-arm offbreak</option>
+                </select>
+            </div>
+            <div class="span1">
+                <label for="yes1">Do you have a Bat ?</label>
+                <br>
+                <label for="yes1">Yes</label>
+                <input type="radio" id="yes1" name="cricket1" value="yes1">
+                <label for="no1">No</label>
+                <input type="radio" id="no1" name="cricket1" value="no1">
+            </div>
+            <div class="span1">
+                <label for="level">Till which level you have played :</label>
+                <br>
+                <select name="level" id="level">
+                    <option value="inter">International</option>
+                    <option value="natio">National</option>
+                    <option value="state">State</option>
+                    <option value="dist">Distict</option>
+                    <option value="local">Local tournaament</option>
+                </select>
+            </div>
+            <div class="span1">
+                <label for="mail">Email :</label>
+                <br>
+                <input type="gmail" placeholder="Enter your email" id="mail" name="mail" >
+            </div>
+            <div class="span1">
+                <label for="mobile">Mobile No. :</label>
+                <br>
+                <input type="text" id="mobile" name="mobile" placeholder="Mobile number.....">
+            </div>
+            <div class="span1">
+                <label for="wp">WhatsApp No. :</label>
+                <br>
+                <input type="text" id="wp" name="wp" placeholder="WhatsApp no.">
+            </div>
+            <div >
+                <textarea class="span2" name="comment" placeholder="Say something about your cricket exprience." id="comment" cols="31" rows="8"></textarea>
+            </div>
+        
+            
+        </span>
+        <footer class="box3">
+            <div>
+                <input type="checkbox"  id="follow" name="follow" value="yes">
+                <label for="follow" class="agree">I agree</label>
+            </div>
+            <div>
+                <img class="bat" height="90vh" width="90vw" src="https://www.thoughtco.com/thmb/hqNbf8KtYeQx0FqnHsvLaR8iupo=/5486x3110/filters:fill(auto,1)/cricket-bat--ball-and-wickets-in-cricket-ground--636479872-5b20323aeb97de0036a0bae2.jpg" alt="bat img">
+            </div>
+            <div><hr size="5px">
+                <a href="index1.html">
+                    <button class="button1">NEXT</button>
+                </a></div>
+            </footer>
+    </div>
+    <script src="tirtha.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+alert("CLICK HERE TO OPEN THIS ")
